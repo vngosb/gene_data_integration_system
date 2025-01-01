@@ -44,12 +44,14 @@ CREATE TABLE IF NOT EXISTS ensembl (
     start_position INTEGER, 
     end_position INTEGER
 );
+
 ncbi: Stores gene descriptions.
 CREATE TABLE IF NOT EXISTS ncbi (
     gene_symbol TEXT PRIMARY KEY, 
     description TEXT
 );
 ucsc: Stores exon details and gene type.
+
 CREATE TABLE IF NOT EXISTS ucsc (
     gene_symbol TEXT PRIMARY KEY, 
     exon_count INTEGER, 
